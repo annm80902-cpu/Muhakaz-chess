@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MUHAKAZ CHESS - vs Bot</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.13.4/chess.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>♟️ MUHAKAZ CHESS vs BOT</h1>
+
+    <div id="board"></div>
+
+    <p id="status">White to move</p>
+
+    <div class="controls">
+      <button onclick="resetGame()">New Game</button>
+      <button onclick="undoMove()">Undo</button>
+      <button onclick="toggleBot()">Bot: <span id="botStatus">ON</span></button>
+    </div>
+
+    <div id="moves">
+      <h3>Moves:</h3>
+      <p id="moveList"></p>
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
